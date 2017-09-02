@@ -1,3 +1,5 @@
+This is Won Maung Thein.
+
 # Shop Comments and Rating
 
 This repository contains initial work on a shopping app. To complete the app, you'll need to implement the functions which allow a visitor to rate and comment on a shop product.
@@ -20,3 +22,5 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
 
 - Try to implement the commenting feature using only [ajax requests](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started), so that the comment appears without reloading the page.
 - Try to implement one or more of the following sorting options: **Highest Rated**, **Lowest Rated**, **A-Z**, **Z-A**, **Most Comments**.
+
+This is Won Maung Thein.
