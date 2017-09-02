@@ -20,3 +20,6 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
 
 - Try to implement the commenting feature using only [ajax requests](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started), so that the comment appears without reloading the page.
 - Try to implement one or more of the following sorting options: **Highest Rated**, **Lowest Rated**, **A-Z**, **Z-A**, **Most Comments**.
+
+# collaborators
+Mohamad Rateb alissa
