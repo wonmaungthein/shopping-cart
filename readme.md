@@ -1,4 +1,3 @@
-This is Won Maung Thein.
 
 # Shop Comments and Rating
 
