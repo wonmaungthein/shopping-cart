@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 
 const mongoConnection = process.env.MONGODB_URI || 'mongodb://localhost:27017/shopcentre';
 
-const getFromDatabase = (query, collection, sucessCallBack) => {
+const getproducts = (query, collection, sucessCallBack) => {
     MongoClient.connect(mongoConnection, (error, db) => {
         const cursor = db.collection(collection).find(query);
         cursor.toArray((error, collections) => {
@@ -13,5 +13,5 @@ const getFromDatabase = (query, collection, sucessCallBack) => {
 }
 
 module.exports = {
-    getFromDatabase
+    getproducts
 };

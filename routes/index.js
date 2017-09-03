@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const fs = require('fs');
+
 
 const dbClient = require('../helper/dbClient.js');
 
@@ -14,11 +14,11 @@ router.get('/', function (req, res, next) {
       res.render('index', {
         title: 'AcmeInc',
         description: 'We sell the finest goods and services.',
-        products: products,
+        products,
       });
     }
   }
-  dbClient.getFromDatabase({}, "products", callBack)
+  dbClient.getproducts({}, "products", callBack)
 });
 
 module.exports = router;
