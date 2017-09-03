@@ -18,7 +18,7 @@ router.get('/', function (req, res, next) {
       });
     }
   }
-  dbClient.getproducts({}, "products", callBack)
+  dbClient.getproducts({}, callBack)
 });
 
 module.exports = router;
