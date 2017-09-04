@@ -19,4 +19,31 @@ router.get('/', function (req, res, next) {
   dbClient.getproducts({}, callBack)
 });
 
+/* GET home page. */
+router.get('/', function (req, res, next) {
+  const callBack = (error, products) => {
+    if (error) {
+      res.sendStatus(500)
+    }
+    else {
+      res.render('index', {
+        title: 'AcmeInc',
+        description: 'We sell the finest goods and services.',
+        products,
+      });
+    }
+  }
+  dbClient.getproducts({}, callBack)
+});
+
+
+
+
+
+
+
+
 module.exports = router;
+
+
+
