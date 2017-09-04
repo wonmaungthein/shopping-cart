@@ -24,5 +24,5 @@ This repository is part of CodeYourFuture's [group projects](https://github.com/
 
 ## Collaborators
 Khaled Ali
-This is Won Maung Thein.
+Won Maung Thein.
 
