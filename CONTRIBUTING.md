@@ -9,9 +9,9 @@ When working with Git, there are 3 main repositories (versions of your project) 
 
 First, do a `git remote -v`. This should show you only your `origin` repo. It should point to a URL containing your username.
 Then, add the upstream repository:
-`git remote add upstream git@github.com:rarmatei/progress-tracker.git`
+`git remote add upstream git@github.com:kabaros/shopping-cart.git`
 
-Now, if you do a `git remote -v` it should show you two remotes: an origin pointing to a URL with your username in it, and an upstream, pointing to **git@github.com:rarmatei/progress-tracker.git**.
+Now, if you do a `git remote -v` it should show you two remotes: an origin pointing to a URL with your username in it, and an upstream, pointing to **git@github.com:kabaros/shopping-cart.git**.
 
 ## Starting work:
 
