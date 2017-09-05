@@ -36,7 +36,7 @@ router.get('/products/:urlPath', function (req, res, next) {
       });
     }
   }
-  dbClient.getproducts({}, callBack);
+  dbClient.getproducts({urlPath}, callBack);
 });
 
 module.exports = router;
