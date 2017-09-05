@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const singleproduct = require ('../helper/singleproduct');
 const dbClient = require('../helper/dbClient.js');
 
 /* GET home page. */
+
 router.get('/', function (req, res, next) {
   const callBack = (error, products) => {
     if (error) {
@@ -21,22 +21,25 @@ router.get('/', function (req, res, next) {
 });
 
 
-/* GET products/lorem page. */
-router.get('/products/lorem', (req, res) => {
-  const callBack = (error, products) => {
+router.get('/products/:urlPath', function (req, res, next) {
+
+  const urlPath = req.params.urlPath;
+  const callBack = (error, product) => {
     if (error) {
       res.sendStatus(500)
     }
     else {
-      res.render('index', products
-      );
+      res.render('single-product', {
+        title: product.title,
+        description: "this is description",
+        product,
+      });
     }
   }
-  Singleproduct({}, callBack)
+  dbClient.getproducts({}, callBack)
 });
 
 
 module.exports = router;
-
 
 
