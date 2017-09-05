@@ -20,11 +20,10 @@ router.get('/', function (req, res, next) {
   dbClient.getproducts({}, callBack)
 });
 
+/* GET single-product information page. */
 
 router.get('/products/:urlPath', function (req, res, next) {
-
   const urlPath = req.params.urlPath;
-
   const callBack = (error, product) => {
     if (error) {
       res.sendStatus(500)
@@ -39,7 +38,6 @@ router.get('/products/:urlPath', function (req, res, next) {
   }
   dbClient.getproducts({}, callBack);
 });
-
 
 module.exports = router;
 
