@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const singleproduct = require ('../helper/singleproduct');
 const dbClient = require('../helper/dbClient.js');
 
 /* GET home page. */
@@ -27,21 +28,12 @@ router.get('/products/lorem', (req, res) => {
       res.sendStatus(500)
     }
     else {
-      res.render('index', {
-        title: String,
-        cost : Number, 
-        rating: Number,
-        comments: [{}],
-      });
+      res.render('index', products
+      );
     }
   }
-  dbClient.getproducts({}, callBack)
+  Singleproduct({}, callBack)
 });
-
-
-
-
-
 
 
 module.exports = router;
