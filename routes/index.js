@@ -37,7 +37,7 @@ router.get('/products/:urlPath', function (req, res, next) {
       });
     }
   }
-  dbClient.getproducts({ urlPath }, callBack);
+  dbClient.getproducts({}, callBack);
 });
 
 
