@@ -24,19 +24,20 @@ router.get('/', function (req, res, next) {
 router.get('/products/:urlPath', function (req, res, next) {
 
   const urlPath = req.params.urlPath;
+
   const callBack = (error, product) => {
     if (error) {
       res.sendStatus(500)
     }
     else {
       res.render('single-product', {
-        title: product.title,
-        description: "this is description",
+        title: product[0].title,
+        description: `This is more about ${product[0].title}`,
         product,
       });
     }
   }
-  dbClient.getproducts({}, callBack)
+  dbClient.getproducts({ urlPath }, callBack);
 });
 
 
