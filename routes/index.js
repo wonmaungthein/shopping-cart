@@ -32,11 +32,14 @@ router.get('/products/:urlPath', function (req, res, next) {
       res.render('single-product', {
         title: product[0].title,
         description: `This is more about ${product[0].title}`,
-        product,
+        product: product[0].product,
+        price:product[0].price,
+        rating:product[0].rating,
+        commentCount:product[0].commentCount,
       });
     }
   }
-  dbClient.getproducts({urlPath}, callBack);
+  dbClient.getproducts({ urlPath }, callBack);
 });
 
 module.exports = router;
