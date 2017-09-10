@@ -1,8 +1,13 @@
 <div class="products">
-    <h2 class="product__title">{{product.title}}</h2>
-    <div class="product__price">${{product.price}}</div>
-    <div class="product__rating">
-        Rating: {{product.rating}}
+    <div class="product__thumbnail product__thumbnail--{{this.urlPath}}"></div>
+    <div class="product__details">
+        <h2 class="product__title">{{product.title}}</h2>
+        <div class="product__price">${{product.price}}</div>
+        <div class="product__rating">
+            Rating: {{product.rating}}
+        </div>
+        <a href="/products/{{this.urlPath}}" class="product__reviews">{{this.commentCount}} comments</a> {{!--{{/if}}--}}
+        <div class="product__buttons">
+            <button class="button button--primary">Buy</button>
+        </div>
     </div>
-    <div class="product__reviews">{{product.commentCount}} comments</div>
-</div>

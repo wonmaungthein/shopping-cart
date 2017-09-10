@@ -33,13 +33,13 @@ router.get('/products/:urlPath', function (req, res, next) {
         title: products[0].title,
         description: `We sell the finest goods and services. 
         This is the ${products[0].title}.`,
-        product: products[0]
+        product: products[0],
       });
     }
   }
   dbClient.getproducts({ urlPath }, callBack);
 });
 
+router.get('/products/:urlpath')
 module.exports = router;
-
 
