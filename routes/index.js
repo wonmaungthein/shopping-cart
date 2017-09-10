@@ -33,11 +33,7 @@ router.get('/products/:urlPath', function (req, res, next) {
         title: products[0].title,
         description: `We sell the finest goods and services. 
         This is the ${products[0].title}.`,
-<<<<<<< HEAD
-        product: products[0],
-=======
         product: products[0]
->>>>>>> 9b05a0fa277906785919b477918bfe8f3124a9fd
       });
     }
   }
