@@ -42,4 +42,3 @@ router.get('/products/:urlPath', function (req, res, next) {
 
 router.get('/products/:urlpath')
 module.exports = router;
-
