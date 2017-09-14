@@ -15,7 +15,6 @@ const addProducts = (query, sucessCallBack) => {
   newProduct.save(query, sucessCallBack);
 };
 
-
 module.exports = {
   getProducts,
   addProducts,
