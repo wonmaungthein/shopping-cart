@@ -16,7 +16,7 @@ const addProducts = (query, sucessCallBack) => {
 
 
 module.exports = {
-     getProducts,
-    addProducts
+  getProducts,
+  addProducts,
 };
-  
+
